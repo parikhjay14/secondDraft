@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <div>
+    <link rel="stylesheet" href="test.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="test.js"></script>
+    <div>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="innerHeader">
+        <h1>Process Scheduling Algorithms</h1>
+      </div>
+    </div>
+  </header>
+  <div class="forms">
+    Algorithm:
+    <form id="algorithm">
+      <input type="radio" name="algorithm" value="fcfs" checked id="fcfs"/> 
+      <label for="fcfs">FCFS</label><br />
+      <input type="radio" name="algorithm" value="sjf" id="sjf"/>
+      <label for="sjf">SJF</label><br />
+      <input type="radio" name="algorithm" value="priority" id="priority"/>
+      <label for="priority">Priority Scheduling</label><br />
+      <input type="radio" name="algorithm" value="robin" id="robin"/> 
+      <label for="robin">Round Robin</label>
+    </form>
+    <br>
+  </div>
+  <div class="table">
+    <table id="inputTable" class="contentTable">
+      <thead>
+        <tr>
+          <th>Process</th>
+          <th>Arrival Time</th>
+          <th>Execute Time</th>
+          <th class="servtime">Service Time</th>
+          <th class="priority-only">Priority</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P0</td>
+          <td>0</td>
+          <td><input class="initial exectime" type="text" value="5" /></td>
+          <td class="servtime"></td>
+          <td class="priority-only initial"><input type="text"/></td>
+      </tr>
+      <tr>
+          <td>P1</td>
+          <td>1</td>
+          <td><input class="initial exectime" value="3" /></td>
+          <td class="servtime"></td>
+          <td class="priority-only" ><input type="text"/></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+   <div>
+    <input id="minus" style="display: inline; left: 428px; position: absolute; top: 170px;" type="button" value="-" onclick="deleteRow();" />
+    <input type="button" value="+" onclick="addRow();" class="plus" />
+        
+        <p id="quantumParagraph" hidden>Quantum: 
+            <input style="width: 50px;" id="quantum" type="text" value="3" />
+        </p>
+        <input type="button" value="Go" onclick="draw();" class="go" />
+        <br/><br/>
+    
+        <fresh>
+        </fresh>
+        <p class="time">
+        Timer: <strong id="timer"></strong> sec
+        </p>
+   </div>
+</body>

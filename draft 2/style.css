@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d4d4d4;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: 3d4d4d4;
+}
+
+.innerHeader{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0px auto;
+    background-color: rgb(122 131 216);
+}
+
+.innerHeader h1{
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    padding-top: 5px;
+    color: white;
+}
+.forms{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 320px;
+    transform: translate(-50%, -50%, -50%, -50%);
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.05);
+    margin: 10px;
+}
+.forms h3{
+    font-size: 25px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.forms{
+    position: relative;
+    padding: 10px;
+
+} 
+
+.forms label{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.forms label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px 0px;
+    height: 20px;
+    
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+.table thead tr{
+    background-color: #009879;
+    border: 2px solid #222;
+    color: black;
+    text-align: left;
+}
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+.table tbody tr{;
+    border-bottom: 1px solid #dddddd;
+}
+.table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+.table tbody tr.active-row{
+    font-weight: bold;
+    color: #009879;
+}
+.plus{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    background-color: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.plus:hover{
+    background: #008066;
+}
+.plus:active{
+    background: #005c49;
+}
+.go{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    background-color: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.go:hover{
+    background: #008066;
+}
+.go:active{
+    background: #005c49;
+}
+.time{
+    display: block;
+    border: 2px solid #222;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
